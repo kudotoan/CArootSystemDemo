@@ -1,0 +1,1848 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>768</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1024</width>
+    <height>768</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: white;</string>
+   </property>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1031</width>
+      <height>771</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QWidget" name="widget" native="true">
+       <widget class="QWidget" name="horizontalLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1031</width>
+          <height>771</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QWidget" name="widget_2" native="true">
+           <property name="maximumSize">
+            <size>
+             <width>200</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <widget class="QWidget" name="verticalLayoutWidget">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>852</width>
+              <height>1448</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="maximumSize">
+                <size>
+                 <width>200</width>
+                 <height>200</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: #2E3B4E;  
+border: none;
+    padding: 0;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="textFormat">
+                <enum>Qt::TextFormat::MarkdownText</enum>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="image/resource.qrc">:/new/image/logo.png</pixmap>
+               </property>
+               <property name="scaledContents">
+                <bool>true</bool>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+               <property name="wordWrap">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QListWidget" name="slidebar">
+               <property name="maximumSize">
+                <size>
+                 <width>200</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="focusPolicy">
+                <enum>Qt::FocusPolicy::NoFocus</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QListWidget {
+    background-color: #2E3B4E;         /* nền tối */
+    color: white;                      /* chữ trắng */
+    border: none;
+    font-size: 10pt;
+    padding: 0;
+}
+
+QListWidget::item {
+    padding: 10px 16px;
+    border: none;
+}
+
+QListWidget::item:selected {
+    background-color: #446CB3;         /* màu xanh dương khi chọn */
+    color: white;
+}
+
+QListWidget::item:hover {
+    background-color: #3B4F70;         /* hover */
+}</string>
+               </property>
+               <property name="editTriggers">
+                <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+               </property>
+               <item>
+                <property name="text">
+                 <string>📊  Dashboard</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>📝  Sign CSR</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>📄  View Certificates</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>⚙️  Settings</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_3" native="true">
+           <widget class="QWidget" name="horizontalLayoutWidget_3">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>-10</y>
+              <width>831</width>
+              <height>781</height>
+             </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QStackedWidget" name="stackedWidget">
+               <property name="styleSheet">
+                <string notr="true">background: transparent;</string>
+               </property>
+               <property name="currentIndex">
+                <number>3</number>
+               </property>
+               <widget class="QWidget" name="dashboardPage">
+                <widget class="QLabel" name="label_2">
+                 <property name="geometry">
+                  <rect>
+                   <x>-10</x>
+                   <y>0</y>
+                   <width>841</width>
+                   <height>121</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"> font-size: 32px;
+    font-weight: bold;
+    color: white;
+background-color: #16A085;
+    padding: 12px 20px;
+    border-bottom: 2px solid #1A252F;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;</string>
+                 </property>
+                 <property name="text">
+                  <string>🔐 Root CA Dashboard</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignmentFlag::AlignCenter</set>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_3">
+                 <property name="geometry">
+                  <rect>
+                   <x>49</x>
+                   <y>242</y>
+                   <width>171</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>-1</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font-weight: bold;
+    color: #2C3E50;
+    font-size: 25px;
+    padding: 4px 8px;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Tên thiết bị:</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="lable_nameCA">
+                 <property name="geometry">
+                  <rect>
+                   <x>330</x>
+                   <y>239</y>
+                   <width>511</width>
+                   <height>51</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: #34495E;
+    font-size: 25px;
+    padding: 4px 8px;</string>
+                 </property>
+                 <property name="text">
+                  <string>Chưa xác định</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_5">
+                 <property name="geometry">
+                  <rect>
+                   <x>50</x>
+                   <y>348</y>
+                   <width>231</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>-1</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font-weight: bold;
+    color: #2C3E50;
+    font-size: 25px;
+    padding: 4px 8px;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Nhà sản xuất:</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="Lable_NSX">
+                 <property name="geometry">
+                  <rect>
+                   <x>330</x>
+                   <y>344</y>
+                   <width>541</width>
+                   <height>51</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: #34495E;
+    font-size: 25px;
+    padding: 4px 8px;</string>
+                 </property>
+                 <property name="text">
+                  <string>Chưa xác định</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_7">
+                 <property name="geometry">
+                  <rect>
+                   <x>50</x>
+                   <y>396</y>
+                   <width>231</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>-1</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font-weight: bold;
+    color: #2C3E50;
+    font-size: 25px;
+    padding: 4px 8px;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Model thiết bị:</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="lable_ModelDevice">
+                 <property name="geometry">
+                  <rect>
+                   <x>330</x>
+                   <y>392</y>
+                   <width>541</width>
+                   <height>51</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: #34495E;
+    font-size: 25px;
+    padding: 4px 8px;</string>
+                 </property>
+                 <property name="text">
+                  <string>Chưa xác định</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_HardwareVersion">
+                 <property name="geometry">
+                  <rect>
+                   <x>331</x>
+                   <y>441</y>
+                   <width>511</width>
+                   <height>51</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: #34495E;
+    font-size: 25px;
+    padding: 4px 8px;</string>
+                 </property>
+                 <property name="text">
+                  <string>Chưa xác định</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="lable_16">
+                 <property name="geometry">
+                  <rect>
+                   <x>50</x>
+                   <y>445</y>
+                   <width>281</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>-1</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font-weight: bold;
+    color: #2C3E50;
+    font-size: 25px;
+    padding: 4px 8px;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Phiên bản phần cứng:</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_11">
+                 <property name="geometry">
+                  <rect>
+                   <x>-468</x>
+                   <y>119</y>
+                   <width>1291</width>
+                   <height>661</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="image/resource.qrc">:/new/image/background.jpg</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                 <property name="indent">
+                  <number>-1</number>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_12">
+                 <property name="geometry">
+                  <rect>
+                   <x>550</x>
+                   <y>743</y>
+                   <width>110</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: #D4EFDF;  /* Light green */
+color: #145A32;   
+font-size: 20px;</string>
+                 </property>
+                 <property name="text">
+                  <string>Trạng thái:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignmentFlag::AlignCenter</set>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="lb_status">
+                 <property name="geometry">
+                  <rect>
+                   <x>660</x>
+                   <y>743</y>
+                   <width>161</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: #D4EFDF;  /* Light green */
+color: #7D6608; font-size: 20px;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Mất kết nối</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignmentFlag::AlignJustify|Qt::AlignmentFlag::AlignVCenter</set>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="lable_Serial">
+                 <property name="geometry">
+                  <rect>
+                   <x>330</x>
+                   <y>291</y>
+                   <width>541</width>
+                   <height>51</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: #34495E;
+    font-size: 25px;
+    padding: 4px 8px;</string>
+                 </property>
+                 <property name="text">
+                  <string>Chưa xác định</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_14">
+                 <property name="geometry">
+                  <rect>
+                   <x>50</x>
+                   <y>295</y>
+                   <width>231</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>-1</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font-weight: bold;
+    color: #2C3E50;
+    font-size: 25px;
+    padding: 4px 8px;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Số Serial:</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_13">
+                 <property name="geometry">
+                  <rect>
+                   <x>49</x>
+                   <y>499</y>
+                   <width>281</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>-1</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font-weight: bold;
+    color: #2C3E50;
+    font-size: 25px;
+    padding: 4px 8px;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Phiên bản firmware:</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_FirmwareVersion">
+                 <property name="geometry">
+                  <rect>
+                   <x>330</x>
+                   <y>495</y>
+                   <width>511</width>
+                   <height>51</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: #34495E;
+    font-size: 25px;
+    padding: 4px 8px;</string>
+                 </property>
+                 <property name="text">
+                  <string>Chưa xác định</string>
+                 </property>
+                </widget>
+                <zorder>label_11</zorder>
+                <zorder>label_2</zorder>
+                <zorder>label_3</zorder>
+                <zorder>lable_nameCA</zorder>
+                <zorder>label_5</zorder>
+                <zorder>Lable_NSX</zorder>
+                <zorder>label_7</zorder>
+                <zorder>lable_ModelDevice</zorder>
+                <zorder>label_HardwareVersion</zorder>
+                <zorder>lable_16</zorder>
+                <zorder>label_12</zorder>
+                <zorder>lb_status</zorder>
+                <zorder>lable_Serial</zorder>
+                <zorder>label_14</zorder>
+                <zorder>label_13</zorder>
+                <zorder>label_FirmwareVersion</zorder>
+               </widget>
+               <widget class="QWidget" name="signCSRPage">
+                <widget class="QLabel" name="label_HardwareVersion_2">
+                 <property name="geometry">
+                  <rect>
+                   <x>341</x>
+                   <y>448</y>
+                   <width>511</width>
+                   <height>51</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: #34495E;
+    font-size: 25px;
+    padding: 4px 8px;</string>
+                 </property>
+                 <property name="text">
+                  <string>Chưa xác định</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_6">
+                 <property name="geometry">
+                  <rect>
+                   <x>60</x>
+                   <y>355</y>
+                   <width>231</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>-1</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font-weight: bold;
+    color: #2C3E50;
+    font-size: 25px;
+    padding: 4px 8px;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Nhà sản xuất:</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_10">
+                 <property name="geometry">
+                  <rect>
+                   <x>140</x>
+                   <y>167</y>
+                   <width>171</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>-1</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="mouseTracking">
+                  <bool>false</bool>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font-weight: bold;
+    color: #2C3E50;
+    font-size: 25px;
+    padding: 4px 8px;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Chọn token:</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="lable_Serial_2">
+                 <property name="geometry">
+                  <rect>
+                   <x>340</x>
+                   <y>298</y>
+                   <width>541</width>
+                   <height>51</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: #34495E;
+    font-size: 25px;
+    padding: 4px 8px;</string>
+                 </property>
+                 <property name="text">
+                  <string>Chưa xác định</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_18">
+                 <property name="geometry">
+                  <rect>
+                   <x>-458</x>
+                   <y>126</y>
+                   <width>1291</width>
+                   <height>661</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="image/resource.qrc">:/new/image/background.jpg</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                 <property name="indent">
+                  <number>-1</number>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_8">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>8</y>
+                   <width>841</width>
+                   <height>121</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"> font-size: 32px;
+    font-weight: bold;
+    color: white;
+background-color: #16A085;
+    padding: 12px 20px;
+    border-bottom: 2px solid #1A252F;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;</string>
+                 </property>
+                 <property name="text">
+                  <string>📝  Sign CSR</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignmentFlag::AlignCenter</set>
+                 </property>
+                </widget>
+                <widget class="QComboBox" name="comboBox_3">
+                 <property name="geometry">
+                  <rect>
+                   <x>230</x>
+                   <y>180</y>
+                   <width>391</width>
+                   <height>44</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>-1</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QComboBox {
+    background-color: #eef6ff;  /* xanh nhạt phù hợp nền */
+    border: 1px solid #70a1d7;  /* xanh dương nhẹ */
+    border-radius: 6px;
+    padding: 6px 30px 6px 10px; /* chừa chỗ cho mũi tên */
+    font-size: 20px;
+    color: #1e1e1e;
+    min-height: 30px;
+}
+
+QComboBox:hover {
+    border: 1px solid #4a90e2;
+    background-color: #e2f0ff;
+}
+
+QComboBox:focus {
+    border: 1px solid #4a90e2;
+    background-color: #dceeff;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 24px;
+    border-left: 1px solid #a0c4e0;
+    background: transparent;
+}
+
+QComboBox::down-arrow {
+    image: url(:/new/icon/icon/down.svg);
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+}
+
+/* Danh sách xổ xuống */
+QComboBox QAbstractItemView {
+    background-color: #ffffff;
+    color: #1e1e1e;
+    selection-background-color: #cce7ff;
+    selection-color: black;
+    border: 1px solid #70a1d7;
+    font-size: 13px;
+    outline: none;
+}
+
+QComboBox QAbstractItemView::item:selected {
+    background-color: #cce7ff;
+    color: black;
+}</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_15">
+                 <property name="geometry">
+                  <rect>
+                   <x>40</x>
+                   <y>180</y>
+                   <width>221</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>-1</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="mouseTracking">
+                  <bool>false</bool>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font-weight: bold;
+    color: #2C3E50;
+    font-size: 25px;
+    padding: 4px 8px;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Chọn CA Root:</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_16">
+                 <property name="geometry">
+                  <rect>
+                   <x>39</x>
+                   <y>230</y>
+                   <width>301</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>-1</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="mouseTracking">
+                  <bool>false</bool>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font-weight: bold;
+    color: #2C3E50;
+    font-size: 25px;
+    padding: 4px 8px;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Chọn chứng chỉ cần ký:</string>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="lineEdit">
+                 <property name="geometry">
+                  <rect>
+                   <x>330</x>
+                   <y>230</y>
+                   <width>291</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>-1</pointsize>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    background-color: #ecf0f1;
+    border: 2px solid #bdc3c7;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+QLineEdit:focus {
+    border: 2px solid #3498db;
+    background-color: #ffffff;
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="readOnly">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="pushButton">
+                 <property name="geometry">
+                  <rect>
+                   <x>630</x>
+                   <y>230</y>
+                   <width>141</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #2c3e50;
+}
+
+QPushButton:pressed {
+    background-color: #1a252f;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Select File...</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="pushButton_2">
+                 <property name="geometry">
+                  <rect>
+                   <x>290</x>
+                   <y>300</y>
+                   <width>151</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #2c3e50;
+}
+
+QPushButton:pressed {
+    background-color: #1a252f;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Ký chứng chỉ</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_9">
+                 <property name="geometry">
+                  <rect>
+                   <x>230</x>
+                   <y>380</y>
+                   <width>271</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: #2c3e50;
+    font-size: 18px;
+    font-weight: bold;</string>
+                 </property>
+                 <property name="text">
+                  <string>Ký chứng chỉ thành công</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignmentFlag::AlignCenter</set>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="pushButton_4">
+                 <property name="geometry">
+                  <rect>
+                   <x>460</x>
+                   <y>381</y>
+                   <width>141</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
+   background-color: transparent;       /* nền trong suốt */
+    color: #3498db;  
+    border: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+color: #1e87d4;}
+
+/* Click: nền đậm hơn */
+QPushButton:pressed {
+ color: #145c9e;}</string>
+                 </property>
+                 <property name="text">
+                  <string>Xem chi tiết...</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="lb_status_3">
+                 <property name="geometry">
+                  <rect>
+                   <x>660</x>
+                   <y>743</y>
+                   <width>161</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: #D4EFDF;  /* Light green */
+color: #7D6608; font-size: 20px;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Mất kết nối</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignmentFlag::AlignJustify|Qt::AlignmentFlag::AlignVCenter</set>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_20">
+                 <property name="geometry">
+                  <rect>
+                   <x>550</x>
+                   <y>743</y>
+                   <width>110</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: #D4EFDF;  /* Light green */
+color: #145A32;   
+font-size: 20px;</string>
+                 </property>
+                 <property name="text">
+                  <string>Trạng thái:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignmentFlag::AlignCenter</set>
+                 </property>
+                </widget>
+               </widget>
+               <widget class="QWidget" name="viewCertificatesPage">
+                <widget class="QLabel" name="lb_status_4">
+                 <property name="geometry">
+                  <rect>
+                   <x>660</x>
+                   <y>743</y>
+                   <width>161</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: #D4EFDF;  /* Light green */
+color: #7D6608; font-size: 20px;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Mất kết nối</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignmentFlag::AlignJustify|Qt::AlignmentFlag::AlignVCenter</set>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_21">
+                 <property name="geometry">
+                  <rect>
+                   <x>550</x>
+                   <y>743</y>
+                   <width>110</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: #D4EFDF;  /* Light green */
+color: #145A32;   
+font-size: 20px;</string>
+                 </property>
+                 <property name="text">
+                  <string>Trạng thái:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignmentFlag::AlignCenter</set>
+                 </property>
+                </widget>
+                <widget class="QComboBox" name="comboBox_4">
+                 <property name="geometry">
+                  <rect>
+                   <x>254</x>
+                   <y>150</y>
+                   <width>391</width>
+                   <height>44</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>-1</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QComboBox {
+    background-color: #eef6ff;  /* xanh nhạt phù hợp nền */
+    border: 1px solid #70a1d7;  /* xanh dương nhẹ */
+    border-radius: 6px;
+    padding: 6px 30px 6px 10px; /* chừa chỗ cho mũi tên */
+    font-size: 20px;
+    color: #1e1e1e;
+    min-height: 30px;
+}
+
+QComboBox:hover {
+    border: 1px solid #4a90e2;
+    background-color: #e2f0ff;
+}
+
+QComboBox:focus {
+    border: 1px solid #4a90e2;
+    background-color: #dceeff;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 24px;
+    border-left: 1px solid #a0c4e0;
+    background: transparent;
+}
+
+QComboBox::down-arrow {
+    image: url(:/new/icon/icon/down.svg);
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+}
+
+/* Danh sách xổ xuống */
+QComboBox QAbstractItemView {
+    background-color: #ffffff;
+    color: #1e1e1e;
+    selection-background-color: #cce7ff;
+    selection-color: black;
+    border: 1px solid #70a1d7;
+    font-size: 13px;
+    outline: none;
+}
+
+QComboBox QAbstractItemView::item:selected {
+    background-color: #cce7ff;
+    color: black;
+}</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_22">
+                 <property name="geometry">
+                  <rect>
+                   <x>-10</x>
+                   <y>9</y>
+                   <width>841</width>
+                   <height>121</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"> font-size: 32px;
+    font-weight: bold;
+    color: white;
+background-color: #16A085;
+    padding: 12px 20px;
+    border-bottom: 2px solid #1A252F;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;</string>
+                 </property>
+                 <property name="text">
+                  <string>📝  Sign CSR</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignmentFlag::AlignCenter</set>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_23">
+                 <property name="geometry">
+                  <rect>
+                   <x>-468</x>
+                   <y>126</y>
+                   <width>1291</width>
+                   <height>661</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="image/resource.qrc">:/new/image/background.jpg</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                 <property name="indent">
+                  <number>-1</number>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_17">
+                 <property name="geometry">
+                  <rect>
+                   <x>50</x>
+                   <y>150</y>
+                   <width>221</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>-1</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="mouseTracking">
+                  <bool>false</bool>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font-weight: bold;
+    color: #2C3E50;
+    font-size: 25px;
+    padding: 4px 8px;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Chọn CA Root:</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="pushButton_3">
+                 <property name="geometry">
+                  <rect>
+                   <x>100</x>
+                   <y>678</y>
+                   <width>191</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #2c3e50;
+}
+
+QPushButton:pressed {
+    background-color: #1a252f;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Get Public Key</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="pushButton_5">
+                 <property name="geometry">
+                  <rect>
+                   <x>490</x>
+                   <y>680</y>
+                   <width>191</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #2c3e50;
+}
+
+QPushButton:pressed {
+    background-color: #1a252f;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Get Certificate</string>
+                 </property>
+                </widget>
+                <widget class="QScrollArea" name="scrollArea">
+                 <property name="geometry">
+                  <rect>
+                   <x>40</x>
+                   <y>230</y>
+                   <width>741</width>
+                   <height>431</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">
+    QScrollBar:vertical, QScrollBar:horizontal {
+        background: white;
+    }
+    QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
+        background: gray; /* màu thanh cuộn */
+        border-radius: 5px;
+    }
+    QScrollBar::add-line, QScrollBar::sub-line {
+        background: none;
+    }</string>
+                 </property>
+                 <property name="widgetResizable">
+                  <bool>true</bool>
+                 </property>
+                 <widget class="QWidget" name="scrollAreaWidgetContents_2">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>739</width>
+                    <height>429</height>
+                   </rect>
+                  </property>
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_4">
+                   <item>
+                    <widget class="QLabel" name="lb_serial">
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <bold>false</bold>
+                      </font>
+                     </property>
+                     <property name="mouseTracking">
+                      <bool>false</bool>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">    color: #0b2b42;
+    font-size: 18px;
+    padding: 4px 8px;
+</string>
+                     </property>
+                     <property name="text">
+                      <string>###</string>
+                     </property>
+                     <property name="textInteractionFlags">
+                      <set>Qt::TextInteractionFlag::LinksAccessibleByMouse|Qt::TextInteractionFlag::TextSelectableByMouse</set>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </widget>
+                <zorder>label_23</zorder>
+                <zorder>lb_status_4</zorder>
+                <zorder>label_21</zorder>
+                <zorder>comboBox_4</zorder>
+                <zorder>label_22</zorder>
+                <zorder>label_17</zorder>
+                <zorder>pushButton_3</zorder>
+                <zorder>pushButton_5</zorder>
+                <zorder>scrollArea</zorder>
+               </widget>
+               <widget class="QWidget" name="settingsPage">
+                <widget class="QLabel" name="lb_status_2">
+                 <property name="geometry">
+                  <rect>
+                   <x>660</x>
+                   <y>743</y>
+                   <width>161</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: #D4EFDF;  /* Light green */
+color: #7D6608; font-size: 20px;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Mất kết nối</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignmentFlag::AlignJustify|Qt::AlignmentFlag::AlignVCenter</set>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_19">
+                 <property name="geometry">
+                  <rect>
+                   <x>550</x>
+                   <y>743</y>
+                   <width>110</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: #D4EFDF;  /* Light green */
+color: #145A32;   
+font-size: 20px;</string>
+                 </property>
+                 <property name="text">
+                  <string>Trạng thái:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignmentFlag::AlignCenter</set>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_24">
+                 <property name="geometry">
+                  <rect>
+                   <x>-460</x>
+                   <y>120</y>
+                   <width>1291</width>
+                   <height>661</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="image/resource.qrc">:/new/image/background.jpg</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                 <property name="indent">
+                  <number>-1</number>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_4">
+                 <property name="geometry">
+                  <rect>
+                   <x>-2</x>
+                   <y>1</y>
+                   <width>841</width>
+                   <height>121</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"> font-size: 32px;
+    font-weight: bold;
+    color: white;
+background-color: #16A085;
+    padding: 12px 20px;
+    border-bottom: 2px solid #1A252F;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;</string>
+                 </property>
+                 <property name="text">
+                  <string>⚙️  Settings</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignmentFlag::AlignCenter</set>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="pushButton_6">
+                 <property name="geometry">
+                  <rect>
+                   <x>310</x>
+                   <y>400</y>
+                   <width>131</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #2c3e50;
+}
+
+QPushButton:pressed {
+    background-color: #1a252f;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Thu hồi</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="pushButton_7">
+                 <property name="geometry">
+                  <rect>
+                   <x>570</x>
+                   <y>550</y>
+                   <width>221</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #2c3e50;
+}
+
+QPushButton:pressed {
+    background-color: #1a252f;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Thêm Certificate</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="pushButton_8">
+                 <property name="geometry">
+                  <rect>
+                   <x>570</x>
+                   <y>610</y>
+                   <width>221</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #2c3e50;
+}
+
+QPushButton:pressed {
+    background-color: #1a252f;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Thay đổi mã Pin thiết bị</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="pushButton_9">
+                 <property name="geometry">
+                  <rect>
+                   <x>570</x>
+                   <y>670</y>
+                   <width>221</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #2c3e50;
+}
+
+QPushButton:pressed {
+    background-color: #1a252f;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Chọn lại thiết bị</string>
+                 </property>
+                </widget>
+                <widget class="QComboBox" name="comboBox_5">
+                 <property name="geometry">
+                  <rect>
+                   <x>323</x>
+                   <y>333</y>
+                   <width>391</width>
+                   <height>44</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>-1</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QComboBox {
+    background-color: #eef6ff;  /* xanh nhạt phù hợp nền */
+    border: 1px solid #70a1d7;  /* xanh dương nhẹ */
+    border-radius: 6px;
+    padding: 6px 30px 6px 10px; /* chừa chỗ cho mũi tên */
+    font-size: 20px;
+    color: #1e1e1e;
+    min-height: 30px;
+}
+
+QComboBox:hover {
+    border: 1px solid #4a90e2;
+    background-color: #e2f0ff;
+}
+
+QComboBox:focus {
+    border: 1px solid #4a90e2;
+    background-color: #dceeff;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 24px;
+    border-left: 1px solid #a0c4e0;
+    background: transparent;
+}
+
+QComboBox::down-arrow {
+    image: url(:/new/icon/icon/down.svg);
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+}
+
+/* Danh sách xổ xuống */
+QComboBox QAbstractItemView {
+    background-color: #ffffff;
+    color: #1e1e1e;
+    selection-background-color: #cce7ff;
+    selection-color: black;
+    border: 1px solid #70a1d7;
+    font-size: 13px;
+    outline: none;
+}
+
+QComboBox QAbstractItemView::item:selected {
+    background-color: #cce7ff;
+    color: black;
+}</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_25">
+                 <property name="geometry">
+                  <rect>
+                   <x>103</x>
+                   <y>333</y>
+                   <width>221</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>-1</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="mouseTracking">
+                  <bool>false</bool>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font-weight: bold;
+    color: #2C3E50;
+    font-size: 25px;
+    padding: 4px 8px;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Chọn Chứng chỉ:</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_26">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>133</y>
+                   <width>571</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>-1</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="mouseTracking">
+                  <bool>false</bool>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font-weight: bold;
+    color: #2C3E50;
+    font-size: 25px;
+    padding: 4px 8px;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>* Một số thông tin lưu ý khi sử dụng:</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_27">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>730</y>
+                   <width>301</width>
+                   <height>51</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>-1</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="mouseTracking">
+                  <bool>false</bool>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font-weight: bold;
+    color: #2C3E50;
+    font-size: 12px;
+    padding: 4px 8px;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>* Ứng dụng được tạo và phát triển bởi KudoToan</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_28">
+                 <property name="geometry">
+                  <rect>
+                   <x>26</x>
+                   <y>170</y>
+                   <width>781</width>
+                   <height>71</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>-1</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="mouseTracking">
+                  <bool>false</bool>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font-weight: bold;
+    color: #2C3E50;
+    font-size: 14px;
+    padding: 4px 8px;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>- Ứng dụng cho phép kết nối với các thiết bị Hardware Security Module (HSM _ Quản lý khóa riêng tư). Để quản lý các Certificate (CA Root, CA TSA, CA Update) của hệ thống. Đồng thời sử dụng để ký lên các CSR của các CA trung gian.</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignmentFlag::AlignJustify|Qt::AlignmentFlag::AlignVCenter</set>
+                 </property>
+                 <property name="wordWrap">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_29">
+                 <property name="geometry">
+                  <rect>
+                   <x>30</x>
+                   <y>233</y>
+                   <width>771</width>
+                   <height>71</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>-1</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="mouseTracking">
+                  <bool>false</bool>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font-weight: bold;
+    color: #2C3E50;
+    font-size: 14px;
+    padding: 4px 8px;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>- Để đảm bảo tính bảo mật của hệ thống, ứng dụng được hoạt động hoàn toàn offline. Trên môi trường offline. Quá trình chuyển, nhận CSR trung gian được thực hiện qua các thiết bị USB An toàn được xác thực và cấp bởi KudoToan</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignmentFlag::AlignJustify|Qt::AlignmentFlag::AlignVCenter</set>
+                 </property>
+                 <property name="wordWrap">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+                <zorder>label_24</zorder>
+                <zorder>lb_status_2</zorder>
+                <zorder>label_19</zorder>
+                <zorder>label_4</zorder>
+                <zorder>pushButton_6</zorder>
+                <zorder>pushButton_7</zorder>
+                <zorder>pushButton_8</zorder>
+                <zorder>pushButton_9</zorder>
+                <zorder>comboBox_5</zorder>
+                <zorder>label_25</zorder>
+                <zorder>label_26</zorder>
+                <zorder>label_27</zorder>
+                <zorder>label_28</zorder>
+                <zorder>label_29</zorder>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="image/resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
